@@ -17,7 +17,6 @@ package com.example.marsphotos.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.aspectRatio
@@ -140,19 +139,6 @@ fun ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier) {
         ) {
             Text(stringResource(R.string.retry))
         }
-    }
-}
-
-/**
- * ResultScreen displaying number of photos retrieved.
- */
-@Composable
-fun ResultScreen(photos: String, modifier: Modifier = Modifier) {
-    Box(
-        contentAlignment = Alignment.Center,
-        modifier = modifier
-    ) {
-        Text(text = photos)
     }
 }
 
